@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -41,6 +40,7 @@ const Project = ({ details }: ProjectProps) => {
           alt={details.title}
           fill
           className="object-cover"
+          loading='lazy'
         />
         {details.isFeatured && (
           <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">

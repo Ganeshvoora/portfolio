@@ -60,6 +60,7 @@ export default function Skils() {
                 width={40} 
                 height={40} 
                 className="mx-auto mb-2"
+                loading="lazy"
               />
               <div className="text-gray-200 font-medium">{skill.name}</div>
               <div className="mt-2 bg-gray-700 h-2 rounded-full overflow-hidden">

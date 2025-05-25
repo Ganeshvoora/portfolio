@@ -1,7 +1,7 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,11 +10,8 @@ import Projects from "@/components/Projects";
 
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false);
 
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+  
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -39,7 +36,7 @@ export default function Home() {
     <main className="min-h-screen bg-gray-900 text-gray-200 font-mono">
       {/* Terminal-style navigation */}
       <Navbar />
-
+      
       {/* Hero Section with Code Animation */}
       <section className="pt-32 pb-20 px-4 md:px-6 bg-gray-950 relative overflow-hidden">
         {/* Animated code background */}
@@ -81,7 +78,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-4xl md:text-5xl font-bold text-white mb-4 text-center"
           >
-            Hi, I'm <span className="text-emerald-400">Voora Venkata Sai Ganesh</span>
+            Hi, I&apos;m <span className="text-emerald-400">Voora Venkata Sai Ganesh</span>
           </motion.h1>
 
           <motion.div
@@ -170,17 +167,17 @@ export default function Home() {
             >
               <div className="bg-gray-900 border border-gray-700 p-6 rounded-lg shadow-xl">
                 <p className="text-gray-300 mb-4">
-                  <span className="text-emerald-400">/**</span><br />
-                  * I'm a passionate developer with expertise in building full-stack web applications and exploring AI/ML technologies.<br />
+                  <span className="text-emerald-400">&#47;**</span><br />
+                  * I&apos;m a passionate developer with expertise in building full-stack web applications and exploring AI/ML technologies.<br />
                   * With a strong foundation in Python, JavaScript, C++, and the MERN stack,<br />
                   * I create impactful solutions that merge innovation with usability.<br />
-                  <span className="text-emerald-400">*/</span>
+                  <span className="text-emerald-400">**&#47;</span>
                 </p>
                 <p className="text-gray-300 mb-4">
-                  My journey in tech began with a deep curiosity for problem-solving and programming. Since then, I've worked on diverse projects—from a travel website to a course-selling platform—while also exploring AI, ML and cybersecurity.
+                  My journey in tech began with a deep curiosity for problem-solving and programming. Since then, I&apos;ve worked on diverse projects—from a travel website to a course-selling platform—while also exploring AI, ML and cybersecurity.
                 </p>
                 <p className="text-gray-300">
-                  When I'm not coding, I enjoy playing chess, diving into new tech trends, and continuously expanding my knowledge in AI.
+                  When I&apos;m not coding, I enjoy playing chess, diving into new tech trends, and continuously expanding my knowledge in AI.
                 </p>
               </div>
 
