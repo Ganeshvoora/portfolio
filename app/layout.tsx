@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "My portfolio",
   description: "A portfolio showcasing my work and skills",
+  authors: [{ name: "Voora Venkata Sai Ganesh" }], // Correct format for authors
+  icons: {
+    icon: "/profile.png",
+  },
 };
 
 export default function RootLayout({

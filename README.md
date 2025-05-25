@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Developer Portfolio - Next.js
+Portfolio Preview
 
-## Getting Started
+A modern, responsive developer portfolio built with Next.js, Tailwind CSS, and Framer Motion animations. This portfolio features a terminal-inspired design with animated components, project showcases, and contact information.
 
-First, run the development server:
+Features
+✨ Modern terminal-inspired UI design
+🎭 Smooth animations with Framer Motion
+📱 Fully responsive for all device sizes
+🌙 Dark mode optimized for developers
+🚀 Fast performance with Next.js
+🧩 Modular component structure
+📝 Easy to customize and extend
+Technologies Used
+Next.js - React framework with App Router
+TypeScript - Type safety and better development experience
+Tailwind CSS - Utility-first styling
+Framer Motion - Animation library
+React - UI component library
+Getting Started
+Prerequisites
+Node.js 18.17.0 or later
+npm or yarn
+Installation
+Clone the repository:
+Install dependencies:
+Run the development server:
+Open http://localhost:3000 in your browser to see the result.
+Customization
+Personal Information
+Edit page.tsx to update your personal information, including name and description.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Projects
+Update the project data in projects.ts to showcase your own projects:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Skills
+Update your skills in the Skills component to match your expertise.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contact Information
+Edit the contact section in page.tsx to update your email, location, and social media links.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment
+This portfolio can be easily deployed on Vercel:
 
-## Learn More
+Push your code to a GitHub repository
+Import your repository on Vercel
+Deploy with a click
+Alternatively, build for production:
 
-To learn more about Next.js, take a look at the following resources:
+License
+This project is open source and available under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Author
+Created by Voora Venkata Sai Ganesh
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+GitHub: Ganeshvoora
+LinkedIn: venkata-sai-ganesh-voora
+Twitter: @ganesh_voora
+Built with ❤️ and Next.js
