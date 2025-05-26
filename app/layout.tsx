@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Voora Venkata Sai Ganesh" }],
   creator: "Voora Venkata Sai Ganesh",
   openGraph: {
-    title: "Venkata Sai Ganesh Voora | Full-Stack Developer",
+    title: "Venkata Sai Ganesh Voora",
     description: "Full-stack developer with expertise in MERN stack, Next.js, and experience in AI/ML and cybersecurity projects.",
     url: "https://vooravenkatasaiganesh.netlify.app/",
     siteName: "Ganesh Voora's Portfolio",
