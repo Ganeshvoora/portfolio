@@ -11,6 +11,7 @@ const skills = [
     { name: 'Bootstrap', icon: 'bootstrap', proficiency: 85 },
     { name: 'Tailwind CSS', icon: 'tailwind', proficiency: 88 },
     { name: 'MERN Stack', icon: 'mern', proficiency: 80 },
-    { name: 'Next.js', icon: 'next', proficiency: 80 }
+    { name: 'Next.js', icon: 'next', proficiency: 80 },
+    { name: 'SQLite', icon: 'sqlite', proficiency: 80 }
   ];
   export default skills;
