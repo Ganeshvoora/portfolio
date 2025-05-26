@@ -64,7 +64,7 @@ export default function Home() {
           >
             <Image
               src="/profile.png"
-              alt="Profile"
+              alt="Voora Venkata Sai Ganesh"
               width={128}
               height={128}
               className="object-cover"
