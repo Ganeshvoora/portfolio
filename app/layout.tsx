@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Venkata Sai Ganesh Voora | Full-Stack Developer",
+  title: "Venkata Sai Ganesh Voora",
   description: "Full-stack developer with expertise in MERN stack, Next.js, and experience in AI/ML and cybersecurity projects.",
-  keywords: ["web development", "full-stack developer", "MERN stack", "Next.js", "AI/ML", "cybersecurity"],
+  keywords: ["Voora Venkata Sai Ganesh","web development", "full-stack developer", "MERN stack", "Next.js", "AI/ML", "cybersecurity"],
   authors: [{ name: "Voora Venkata Sai Ganesh" }],
   creator: "Voora Venkata Sai Ganesh",
   openGraph: {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/profile.png",
         width: 1200,
         height: 630,
-        alt: "Ganesh Voora - Full-Stack Developer",
+        alt: "Ganesh Voora",
       },
     ],
     locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venkata Sai Ganesh Voora | Full-Stack Developer",
+    title: "Venkata Sai Ganesh Voora",
     description: "Full-stack developer with expertise in MERN stack, Next.js, and experience in AI/ML and cybersecurity projects.",
     creator: "@ganesh_voora",
     images: ["/profile.png"],
