@@ -33,7 +33,8 @@ const Contact = () => {
     });
 
     const result = await response.json();
-    if (response.ok) {
+
+    if (response.status === 200) {
       alert('Email sent successfully!');
     } else {
       alert(`Error: ${result.message}`);
