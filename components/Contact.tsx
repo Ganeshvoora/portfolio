@@ -16,13 +16,13 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const subject = `Message from ${name}`;
-        const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
-        const mailtoLink = `mailto:venkatasaiganeshvoora@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-    };
+     const handleSubmit = (e:React.FormEvent) => {
+    e.preventDefault();
+    const subject = `Message from ${name}`;
+    const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=venkatasaiganeshvoora@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink, "_blank");
+  };
     return (
         <motion.section
             id="contact"
