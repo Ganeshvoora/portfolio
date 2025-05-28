@@ -25,15 +25,13 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const subject = `Message from ${name}`;
-        const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage:${message}`;
-        const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=venkatasaiganeshvoora@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        // Open Gmail compose with pre-filled details
-        // window.open(mailtoLink, '_blank');
-        window.location.href=mailtoLink 
-    };
+    e.preventDefault();
+    const subject = `Message from ${name}`;
+    const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
+    const mailtoLink = `mailto:venkatasaiganeshvoora@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoLink;
+};
     return (
         <motion.section
             id="contact"
