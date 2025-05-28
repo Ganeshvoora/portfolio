@@ -12,26 +12,17 @@ const Contact = () => {
         }
     };
 
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.2
-            }
-        }
-    };
+    
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = `Message from ${name}`;
-    const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
-    const mailtoLink = `mailto:venkatasaiganeshvoora@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoLink;
-};
+        e.preventDefault();
+        const subject = `Message from ${name}`;
+        const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
+        const mailtoLink = `mailto:venkatasaiganeshvoora@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    };
     return (
         <motion.section
             id="contact"
@@ -129,7 +120,9 @@ const Contact = () => {
                             className="w-full md:w-1/2"
                         >
                             <h3 className="text-xl font-semibold text-white mb-4">Send me a message</h3>
-                            <form className="space-y-4" onSubmit={handleSubmit}>
+                            <form className="space-y-4" 
+                            onSubmit={handleSubmit}
+                            >
                                 <div>
                                     <input
                                         type="text"
