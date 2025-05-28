@@ -31,7 +31,8 @@ const Contact = () => {
         const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=venkatasaiganeshvoora@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
         // Open Gmail compose with pre-filled details
-        window.open(mailtoLink, '_blank');
+        // window.open(mailtoLink, '_blank');
+        window.location.href=mailtoLink 
     };
     return (
         <motion.section
