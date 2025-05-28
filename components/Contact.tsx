@@ -16,13 +16,33 @@ const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-     const handleSubmit = (e:React.FormEvent) => {
-    e.preventDefault();
-    const subject = `Message from ${name}`;
-    const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
-    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=venkatasaiganeshvoora@gmail.com&su=${(subject)}&body=${(body)}`;
-    window.open(mailtoLink, "_blank");
-  };
+     const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch('https://vooravenkatasaiganesh.netlify.app/api/mail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        message,
+      }),
+    });
+
+    const result = await response.json();
+    if (response.ok) {
+      alert('Email sent successfully!');
+    } else {
+      alert(`Error: ${result.message}`);
+    }
+  } catch (error) {
+    console.error('Email sending failed:', error);
+    alert('Something went wrong. Please try again later.');
+  }
+};
     return (
         <motion.section
             id="contact"
