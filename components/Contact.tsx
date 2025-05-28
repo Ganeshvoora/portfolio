@@ -19,7 +19,7 @@ const Contact = () => {
      const handleSubmit = (e:React.FormEvent) => {
     e.preventDefault();
     const subject = `Message from ${name}`;
-    const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage:%0D%0A${message}`;
+    const body = `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`;
     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=venkatasaiganeshvoora@gmail.com&su=${(subject)}&body=${(body)}`;
     window.open(mailtoLink, "_blank");
   };
