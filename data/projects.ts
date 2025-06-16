@@ -1,5 +1,6 @@
 const projects = [
     {
+        id:7,
         "title": "DevToolBox - Developer Utility Suite",
         "image": "/devtoolbox.png",
         "isFeatured": true,
@@ -17,7 +18,7 @@ const projects = [
         "links": {
             "demo": "https://devtoolbox.vercel.app/"
         }
-    }
+    },
 
     {
         id: 1,
