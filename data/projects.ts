@@ -1,5 +1,25 @@
 const projects = [
     {
+        "title": "DevToolBox - Developer Utility Suite",
+        "image": "/devtoolbox.png",
+        "isFeatured": true,
+        "technologies": [
+            "Next.js", "TypeScript", "Tailwind CSS", "React"
+        ],
+        "description": "DevToolBox is a multi-tool utility application built for developers. It brings together essential tools like JSON Formatter, JWT Decoder, Base64 Encoder/Decoder, UUID Generator, Lorem Ipsum Generator, Regex Tester, and Markdown Preview in a clean and accessible single-page interface.",
+        "keyFeatures": [
+            "Clean and responsive UI with Tailwind CSS and ShadCN UI",
+            "Single-page app experience using Next.js and TypeScript",
+            "Useful tools like JSON Formatter, JWT Decoder, Regex Tester, and more",
+            "Designed to simplify repetitive tasks for developers"
+        ],
+        "highlight": "A developer-focused utility suite that boosts productivity and centralizes common tools into one powerful interface.",
+        "links": {
+            "demo": "https://devtoolbox.vercel.app/"
+        }
+    }
+
+    {
         id: 1,
         "title": "DevHub  AI-Powered Developer Hub",
         "image": "/devhub.png",
