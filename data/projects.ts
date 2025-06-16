@@ -9,7 +9,7 @@ const projects = [
         ],
         "description": "DevToolBox is a multi-tool utility application built for developers. It brings together essential tools like JSON Formatter, JWT Decoder, Base64 Encoder/Decoder, UUID Generator, Lorem Ipsum Generator, Regex Tester, and Markdown Preview in a clean and accessible single-page interface.",
         "links": {
-            "demo": "https://devtoolbox.vercel.app/"
+            "demo": "https://devtoolboxvvsg.vercel.app/"
         }
     },
 
