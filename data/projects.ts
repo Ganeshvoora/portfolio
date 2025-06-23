@@ -1,6 +1,28 @@
 const projects = [
     {
-        id:7,
+        id: 8,
+        "title": "Smart Bus Ticketing with Face & QR Code",
+        "image": "/autofare.jpg",
+        "isFeatured": true,
+        "technologies": [
+            "Face Recognition", "QR Code Scanner", "Mobile App", "AI", "Camera Module", "Geolocation"
+        ],
+        "description": "An AI-powered smart ticketing system for public buses that uses face recognition and QR verification. Passengers scan a QR code using a mobile app and take a selfie. The system then matches their face with bus-entry camera footage to verify ticket purchase or pass validity.",
+        "keyFeatures": [
+            "Face recognition for entry verification",
+            "QR code scan with a 5-minute verification window",
+            "Mobile app integration for ticket/pass validation",
+            "Real-time conductor alerts with photo and seat location if ticket/pass is not verified",
+            "Reduces fraud, improves efficiency, and automates fare checks"
+        ],
+        "highlight": "A futuristic, fraud-resistant solution that makes public bus ticketing faster and smarter using AI, face verification, and QR technology.",
+        "links": {
+            "code": "#"
+        }
+    },
+
+    {
+        id: 7,
         "title": "DevToolBox - Developer Utility Suite",
         "image": "/devtoolbox.png",
         "isFeatured": true,
