@@ -1,8 +1,8 @@
 const projects = [
     {
         id: 8,
-        "title": "Smart Bus Ticketing with Face & QR Code",
-        "image": "/autofare.jpg",
+        "title": "Auto Fare - Smart Bus Ticketing with Face & QR Code",
+        "image": "/autofare.png",
         "isFeatured": true,
         "technologies": [
             "Face Recognition", "QR Code Scanner", "Mobile App", "AI", "Camera Module", "Geolocation"
