@@ -17,7 +17,7 @@ const projects = [
         ],
         "highlight": "A futuristic, fraud-resistant solution that makes public bus ticketing faster and smarter using AI, face verification, and QR technology.",
         "links": {
-            "code": "#"
+            "code": "https://github.com/Ganeshvoora/auto-fare"
         }
     },
 
