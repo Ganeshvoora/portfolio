@@ -64,10 +64,17 @@ const Experience = () => {
                                 className="bg-gray-900 border border-gray-700 p-6 rounded-lg shadow-lg transition-colors duration-300"
                             >
                                 <div className="flex flex-col sm:flex-row justify-between items-start mb-3">
-                                    <div>
-                                        <h3 className="text-xl font-semibold text-white">{job.role}</h3>
-                                        <p className="text-emerald-400 font-medium">{job.company}</p>
-                                        <p className="text-sm text-gray-400 mt-1">{job.location}</p>
+                                    <div className="flex items-center space-x-4">
+                                        {job.image_url && (
+                                            <div className="flex-shrink-0 w-16 h-16 rounded-md overflow-hidden bg-gray-100 border border-gray-700 flex items-center justify-center">
+                                                <Image src={job.image_url} alt={`${job.company} logo`} width={48} height={48} className="object-contain" />
+                                            </div>
+                                        )}
+                                        <div>
+                                            <h3 className="text-xl font-semibold text-white">{job.role}</h3>
+                                            <p className="text-emerald-400 font-medium">{job.company}</p>
+                                            <p className="text-sm text-gray-400 mt-1">{job.location}</p>
+                                        </div>
                                     </div>
                                     <span className="text-sm text-gray-400 mt-2 sm:mt-0 sm:text-right whitespace-nowrap">{job.duration}</span>
                                 </div>

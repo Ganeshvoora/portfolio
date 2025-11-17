@@ -51,7 +51,7 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: i * 0.1, duration: 1 }}
               >
-                {`const developer = { name: "Voora Venkata Sai Ganesh",\n\t skills: ["JavaScript", "MERN Stack","Next.js",],\n\t passion: "Building amazing web experiences,Learning AIML,CyberSecurity" };`}
+                {`const developer = { name: "Voora Venkata Sai Ganesh",\n\t skills: ["JavaScript", "MERN Stack","Next.js","python","Automation"],\n\t passion: "Building amazing web experiences,Learning AIML,CyberSecurity" };`}
               </motion.div>
             ))}
           </pre>
@@ -90,7 +90,7 @@ export default function Home() {
             className="flex justify-center mb-8"
           >
             <div className="bg-gray-800 rounded-md p-2 px-4 inline-block border border-gray-700">
-              <span className="text-xl text-gray-300">&gt; <span className="typing-text text-emerald-400">Full-Stack Developer</span></span>
+              <span className="text-xl text-gray-300">&gt; <span className="typing-text text-emerald-400">AI Generalist</span></span>
             </div>
           </motion.div>
 
@@ -170,7 +170,7 @@ export default function Home() {
               <div className="bg-gray-900 border border-gray-700 p-6 rounded-lg shadow-xl">
                 <p className="text-gray-300 mb-4">
                   <span className="text-emerald-400">&#47;**</span><br />
-                  * I'm a passionate developer specializing in full-stack development, backend engineering, and AI-driven automation.<br />
+                  * I&apos;m a passionate developer specializing in full-stack development, backend engineering, and AI-driven automation.<br />
                   * I build scalable solutions using FastAPI, Next.js, PostgreSQL, and automation tools like n8n.<br />
                   * Experienced in creating intelligent workflows, hiring platforms, social media automation, and real-world production systems.<br />
                   * With a strong foundation in Python, JavaScript, C++, and the MERN stack,<br />

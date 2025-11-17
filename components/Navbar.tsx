@@ -90,7 +90,7 @@ const Navbar = () => {
           variants={staggerContainer}
           className="hidden md:flex md:space-x-6"
         >
-          {["about", "skills", "projects", "contact"].map((item) => (
+          {["about", "skills", "projects", "experience",  "contact"].map((item) => (
             <motion.div key={item} variants={fadeIn}>
               <Link
                 href={`#${item}`}
@@ -118,7 +118,7 @@ const Navbar = () => {
             className="w-full md:hidden overflow-hidden bg-gray-900 border-t border-gray-800"
           >
             <div className="container mx-auto px-4 py-2">
-              {["about", "skills", "projects", "contact"].map((item) => (
+              {["about", "skills", "projects", "experience", "contact"].map((item) => (
                 <motion.div 
                   key={item} 
                   variants={fadeIn}
