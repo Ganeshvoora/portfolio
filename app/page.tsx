@@ -9,6 +9,7 @@ import Skils from "@/components/Skils";
 import Projects from "@/components/Projects";
 import Interest from "@/components/Interest";
 import Contact from "@/components/Contact";
+import Experience from '@/components/Experience';
 
 export default function Home() {
 
@@ -158,7 +159,7 @@ export default function Home() {
           </h2>
           <div className="h-1 w-20 bg-emerald-500 mx-auto mb-12 rounded"></div>
 
-          <div className="flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -169,11 +170,14 @@ export default function Home() {
               <div className="bg-gray-900 border border-gray-700 p-6 rounded-lg shadow-xl">
                 <p className="text-gray-300 mb-4">
                   <span className="text-emerald-400">&#47;**</span><br />
-                  * I&apos;m a passionate developer with expertise in building full-stack web applications and exploring AI/ML technologies.<br />
+                  * I'm a passionate developer specializing in full-stack development, backend engineering, and AI-driven automation.<br />
+                  * I build scalable solutions using FastAPI, Next.js, PostgreSQL, and automation tools like n8n.<br />
+                  * Experienced in creating intelligent workflows, hiring platforms, social media automation, and real-world production systems.<br />
                   * With a strong foundation in Python, JavaScript, C++, and the MERN stack,<br />
-                  * I create impactful solutions that merge innovation with usability.<br />
+                  * I enjoy crafting impactful, user-centric applications that merge innovation with usability.<br />
                   <span className="text-emerald-400">**&#47;</span>
                 </p>
+
                 <p className="text-gray-300 mb-4">
                   My journey in tech began with a deep curiosity for problem-solving and programming. Since then, I&apos;ve worked on diverse projects—from a travel website to a course-selling platform—while also exploring AI, ML and cybersecurity.
                 </p>
@@ -214,6 +218,8 @@ export default function Home() {
       <Interest />
       {/* Skills Section */}
       <Skils />
+      {/* Experience Section */}
+      <Experience />
 
       {/* Projects Section */}
       <Projects />

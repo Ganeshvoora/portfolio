@@ -30,7 +30,7 @@ const Contact = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="py-20 px-4 md:px-6  bg-gray-800 border-t border-gray-700"
+            className="py-20 px-4 md:px-6 bg-gray-900 border-t border-gray-700"
         >
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-center text-white mb-4">
@@ -38,7 +38,7 @@ const Contact = () => {
                 </h2>
                 <div className="h-1 w-20 bg-emerald-500 mx-auto mb-12 rounded"></div>
 
-                <div className="max-w-3xl mx-auto  p-8 rounded-lg shadow-lg  bg-gray-900 border-t border-gray-700">
+                <div className="max-w-3xl mx-auto  p-8 rounded-lg shadow-lg  bg-gray-800 border-t border-gray-700">
                     <div className="flex flex-col md:flex-row md:justify-between gap-8">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

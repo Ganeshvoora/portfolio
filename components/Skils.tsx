@@ -31,7 +31,7 @@ export default function Skils() {
       whileInView="visible"
       viewport={{ once: true }}
       variants={fadeIn}
-      className="py-20 px-4 md:px-6 bg-gray-800 border-t border-gray-700"
+      className="py-20 px-4 md:px-6  bg-gray-800 border-t border-gray-700 "
     >
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center text-white mb-4">

@@ -103,7 +103,7 @@ export async function POST(request: NextRequest) {
     
     // Create a conversation model, updated to use a current model name
     const model = genAI.getGenerativeModel({ 
-      model: "gemini-1.5-flash", // Changed from "gemini-pro"
+      model: "gemini-2.5-flash", // Changed from "gemini-pro"
       // The system instruction is now passed as a Content object
       systemInstruction: {
         role: "system",
