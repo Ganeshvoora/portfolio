@@ -115,8 +115,11 @@ export async function POST(request: NextRequest) {
     };
     
     // Create a conversation model, updated to use a current model name
-    const model = genAI.getGenerativeModel({ 
-      model: "gemini-2.5-flash", // Changed from "gemini-pro"
+      // Read model name from env (allow changing model without code edits)
+      const modelName = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+      // Create a conversation model using the configured model name
+      const model = genAI.getGenerativeModel({
+        model: modelName,
       // The system instruction is now passed as a Content object
       systemInstruction: {
         role: "system",

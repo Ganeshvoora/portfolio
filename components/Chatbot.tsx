@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Message {
     id: string;
@@ -154,7 +156,23 @@ const ChatBot = () => {
                                                 : 'bg-gray-800 text-gray-200'
                                             }`}
                                     >
-                                        <p className="text-sm">{message.content}</p>
+                                        <div className="prose prose-invert max-w-none">
+                                            <ReactMarkdown
+                                                remarkPlugins={[remarkGfm]}
+                                                components={({
+                                                    p: ({ node, ...props }: any) => <p className="text-sm" {...props} />,
+                                                    a: ({ node, ...props }: any) => <a className="text-emerald-300 underline" {...props} />,
+                                                    li: ({ node, ...props }: any) => <li className="text-sm" {...props} />,
+                                                    code: ({ node, inline, className, children, ...props }: any) => (
+                                                        <code className={`px-1 py-0.5 rounded ${inline ? 'bg-gray-800' : 'bg-gray-900'} text-sm`} {...props}>
+                                                            {children}
+                                                        </code>
+                                                    ),
+                                                } as any)}
+                                            >
+                                                {message.content}
+                                            </ReactMarkdown>
+                                        </div>
                                         <p className="text-xs opacity-70 mt-1 text-right">
                                             {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                         </p>
