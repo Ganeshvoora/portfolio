@@ -157,19 +157,7 @@ const ChatBot = () => {
                                             }`}
                                     >
                                         <div className="prose prose-invert max-w-none">
-                                            <ReactMarkdown
-                                                remarkPlugins={[remarkGfm]}
-                                                components={({
-                                                    p: ({ node, ...props }: any) => <p className="text-sm" {...props} />,
-                                                    a: ({ node, ...props }: any) => <a className="text-emerald-300 underline" {...props} />,
-                                                    li: ({ node, ...props }: any) => <li className="text-sm" {...props} />,
-                                                    code: ({ node, inline, className, children, ...props }: any) => (
-                                                        <code className={`px-1 py-0.5 rounded ${inline ? 'bg-gray-800' : 'bg-gray-900'} text-sm`} {...props}>
-                                                            {children}
-                                                        </code>
-                                                    ),
-                                                } as any)}
-                                            >
+                                            <ReactMarkdown remarkPlugins={[remarkGfm]}> 
                                                 {message.content}
                                             </ReactMarkdown>
                                         </div>
